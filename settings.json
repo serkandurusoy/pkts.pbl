@@ -1,0 +1,8 @@
+{
+  "public": {
+    "foo": "bar"
+  },
+  "private": {
+    "baz": "quux"
+  }
+}

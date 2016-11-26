@@ -2,10 +2,51 @@
   "name": "pbl",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "MONGO_URL=mongodb://localhost:27017/pbl MONGO_OPLOG_URL=mongodb://localhost:27017/local meteor run --settings settings.json --port 3000"
   },
   "dependencies": {
+    "babel-runtime": "6.18.0",
+    "bcrypt": "^0.8.7",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.2",
     "meteor-node-stubs": "~0.2.0",
-    "babel-runtime": "6.18.0"
+    "moment": "^2.17.0",
+    "moment-timezone": "^0.5.9",
+    "react": "^15.4.1",
+    "react-addons-pure-render-mixin": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-waat": "^0.2.0",
+    "eslint-config-waat": "^0.1.1",
+    "object-assign": "^4.1.0"
+  },
+  "eslintConfig": {
+    "extends": "waat",
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "no-underscore-dangle": "off",
+      "meteor/audit-argument-checks": "off",
+      "func-names": "off",
+      "no-param-reassign": [
+        "error",
+        {
+          "props": false
+        }
+      ],
+      "object-shorthand": [
+        "error",
+        "always",
+        {
+          "avoidQuotes": false
+        }
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      "waat"
+    ]
   }
 }
