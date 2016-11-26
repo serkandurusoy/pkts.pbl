@@ -66,21 +66,3 @@ function sendMTEX(message, conn){
     console.log('MTEX sent ! ');
   }, 3000)
 }
-
-// HTTP server -----------------------------------------------------
-var http = require('http');
-const httpPort = 3000;
-
-//We need a function which handles requests and send response
-function handleRequest(request, response){
-    response.end('I.Cat Invent - hello cango !: ' + request.url);
-}
-
-//Create a server
-var httpserver = http.createServer(handleRequest);
-
-//Lets start our server
-httpserver.listen(httpPort, function(){
-    //Callback triggered when server is successfully listening. Hurray!
-    console.log("HTTP Server listening on: http://localhost:%s", httpPort);
-});

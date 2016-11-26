@@ -1,7 +1,8 @@
 import React  from 'react';
 import ReactDOM from 'react-dom';
+import { App } from '/imports/client/ui/layouts';
 
 ReactDOM.render(
-  <h1>Heyo</h1>,
+  <App />,
   document.getElementById('root')
 );
