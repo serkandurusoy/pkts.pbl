@@ -2,7 +2,7 @@
   "name": "pbl",
   "private": true,
   "scripts": {
-    "start": "TCP_PORT=9000 MONGO_URL=mongodb://localhost:27017/pbl MONGO_OPLOG_URL=mongodb://localhost:27017/local meteor run --settings settings.json --port 3000"
+    "start": "TCP_PORT=4000 MONGO_URL=mongodb://localhost:27017/pbl MONGO_OPLOG_URL=mongodb://localhost:27017/local meteor run --settings settings.json --port 3000"
   },
   "dependencies": {
     "babel-runtime": "6.18.0",

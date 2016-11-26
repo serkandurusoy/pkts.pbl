@@ -1,3 +1,1 @@
-/**
- * Created by serkandurusoy on 11/26/16.
- */
+export { Messages } from './_model';
